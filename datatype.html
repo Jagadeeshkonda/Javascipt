@@ -1,0 +1,46 @@
+<head>
+    <script>
+        function dtype()
+        {
+            
+            document.getElementById("result").value = typeof eval(document.getElementById("result").value)
+            
+           
+        }
+    </script>
+</head>
+	<!-- for styling -->
+	<style> 
+		.title{ 
+		margin-bottom: 10px; 
+		text-align:center; 
+		width: 210px; 
+		color:blue; 
+		border: solid black 2px; 
+		} 
+
+		input[type="button"] 
+		{ 
+		background-color:white; 
+		color: black; 
+		border: solid black 2px; 
+        border-radius: 10px;
+		width:100% 
+		} 
+
+		input[type="value"] 
+		{ 
+		background-color:white; 
+		border: solid black 2px; 
+		width:100% 
+		} 
+	</style> 
+<body>
+    <div class = title> Datatype check</div>
+    <table border="1"> 
+		<tr> 
+            <td colspan="3"><input id="result"/></td> 
+            <td><input type="button" value="check" onclick="dtype()"/> </td>
+        </tr>
+    </table>
+</body>
